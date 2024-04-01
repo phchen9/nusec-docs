@@ -4,8 +4,6 @@ NuSEC system is composed of software and hardware components. This page
 introduces the components used by original equipment manufacturer (OEM) and
 contract manufacturer (CM).
 
-[flow](flow.md)
-
 ## Original equipment manufacturer (OEM)
 
 ### Cloud server
