@@ -48,5 +48,5 @@ environment.
 A target device can generate private key inside the device and never leaves the
 device. And each device is provisioned with the certificate signed with cloud
 server. In addition, a target device supports secure boot, which means only
-firmwares signed by cloud server can be executed on the target device. It
+firmware signed by cloud server can be executed on the target device. It
 prevents malicious code from compromising the boot process.

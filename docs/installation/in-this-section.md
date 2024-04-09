@@ -1,6 +1,6 @@
 # Installation
 
-We assume the reader is an OEM user, who is trying to build a cloud server
-and prepare programmers for CM.
-For more information about the software components used by OEM, please read
-the [components](\about\components) section.
+This guide will help OEM users build a cloud server and prepare programmers
+for mass production in manufacturing environment.
+For more information about software components in NuSEC system, please read
+the [components](../about/components.md) section.
