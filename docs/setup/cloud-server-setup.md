@@ -1,4 +1,4 @@
-# Build cloud server
+# Cloud server setup
 
 This article shows you how to setup a cloud server on __Linux__.
 The distro used here is Ubuntu server 22.04.
@@ -79,7 +79,7 @@ certificate enable servers to use HTTPS.
 
 ### Sign a client certificate
 
-To run [NuSEC.py](nusec-py.md), a client certificate is required.
+To run [NuSEC.py](nusec-py-setup.md), a client certificate is required.
 Follow the steps to create a certificate for the client.
 
 Create a private key.
@@ -207,6 +207,8 @@ curl -fsSL https://www.mongodb.org/static/pgp/server-7.0.asc | sudo gpg -o /usr/
 echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] https://repo.mongodb.org/apt/ubuntu jammy/mongodb-org/7.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-7.0.list
 sudo apt-get update
 sudo apt-get install -y mongodb-org
+sudo systemctl enable mongod
+sudo systemctl start mongod
 ```
 
 #### (Optional) Allow other host to connect via a specific network interface
@@ -292,6 +294,16 @@ Please make them available to node.js server
 * `ca-chain.crt`
 * `key.pem`
 * `combine.crt`
+* `root.crt`
+* `intermediate.crt`
+
+### Install python packages
+
+The server will execute python script to perform operations on softHSM.
+Therefore following package is required:
+```
+pip3 install python-pkcs11
+```
 
 ### Run the HTTP API server
 
