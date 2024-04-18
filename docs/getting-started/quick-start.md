@@ -70,3 +70,8 @@ connection with cloud server. Then, the programmer will make target board
 perform key generation and provision certificate to the target board.
 
 ### Firmware attestation
+
+After device provisioning is complete, firmware attestation automatically start.
+The programmer make the target device ready for secure boot and then proceed to
+burn signed firmware images onto target device. Once it is done, the target
+device boots to application firmware (BL3).
