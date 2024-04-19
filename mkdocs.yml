@@ -1,4 +1,5 @@
 site_name: 'NuSEC Documentation'
+site_url: https://phchen9.github.io/nusec-docs
 nav:
   - Home: 'index.md'
   - About:
