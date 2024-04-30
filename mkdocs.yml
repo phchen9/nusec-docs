@@ -20,7 +20,7 @@ nav:
     - 'sequence-diagrams/export-package.md'
     - 'sequence-diagrams/import-package.md'
     - 'sequence-diagrams/device-authentication-provisioning.md'
-    - 'sequence-diagrams/firmware-attestation.md'
+    - 'sequence-diagrams/firmware-provisioning.md'
     - 'sequence-diagrams/firmware-upgrade.md'
 theme:
   name: material

@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-# Firmware attestation
+# Firmware provisioning
 
 ```mermaid
 sequenceDiagram

@@ -38,7 +38,7 @@
 
 ![device-authentication-provisioning](../imgs/device-authentication-provisioning.png)
 
-### Firmware attestation
+### Firmware provisioning
 
 * Ask server to create keypairs for secure boot on target board
 * Program public keys for secure boot to target board
@@ -46,7 +46,7 @@
 * Program bootloader firmware(BL2) to target board via SWD
 * Securely program app firmware(BL3) to target board via ISP UART
 
-![firmware-attestation](../imgs/firmware-attestation.png)
+![firmware-provisioning](../imgs/firmware-provisioning.png)
 
 ## Maintenance
 

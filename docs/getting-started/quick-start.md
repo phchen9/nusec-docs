@@ -15,7 +15,7 @@ Now the programmer is ready, trigger the production procedure to start
 provisioning and programming a target device.
 
 * Device authentication provisioning
-* Firmware attestation
+* Firmware provisioning
 
 Finally, if the target device is successfully programmed. The
 `firmware_bl3_version` property of target device in database will be updated.
@@ -69,9 +69,9 @@ The programmer will try to connect to Wi-Fi network and establish a TLS
 connection with cloud server. Then, the programmer will make target board
 perform key generation and provision certificate to the target board.
 
-### Firmware attestation
+### Firmware provisioning
 
-After device provisioning is complete, firmware attestation automatically start.
+After device provisioning is complete, firmware provisioning automatically start.
 The programmer make the target device ready for secure boot and then proceed to
 burn signed firmware images onto target device. Once it is done, the target
 device boots to application firmware (BL3).
